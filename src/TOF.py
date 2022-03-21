@@ -384,10 +384,10 @@ def Tof():
     rodape.place(x=300, y=589, anchor="center")
     rodape.configure(bg="gainsboro", fg='gray')
 
-    botaoSelecionar = PhotoImage(file = 'C:/Users/bmt003/Desktop/TransFile/img/botaoSelecionar.png')
-    botaoVerificar = PhotoImage(file = 'C:/Users/bmt003/Desktop/TransFile/img/botaoVerificar.png')
-    botaoMover = PhotoImage(file = 'C:/Users/bmt003/Desktop/TransFile/img/botaoMover.png')
-    botaoCopiar = PhotoImage(file = 'C:/Users/bmt003/Desktop/TransFile/img/botaoCopiar.png')
+    botaoSelecionar = PhotoImage(file = 'img/botaoSelecionar.png')
+    botaoVerificar = PhotoImage(file = 'img/botaoVerificar.png')
+    botaoMover = PhotoImage(file = 'img/botaoMover.png')
+    botaoCopiar = PhotoImage(file = 'img/botaoCopiar.png')
 
 
     texto_local_origem = Label(root, text= 'Local de Origem', font=('Helvetica', 10))
@@ -459,14 +459,14 @@ def Tof():
     camada_logo = Canvas(root, bg='gainsboro', height=150, width=300, highlightthickness=0)
     camada_logo.pack
     camada_logo.place(x=300, y=80, anchor="center")
-    logotk = PhotoImage(file = 'C:/Users/bmt003/Desktop/TransFile/img/logo.png')
+    logotk = PhotoImage(file = 'img/logo.png')
     image = camada_logo.create_image(150, 75, anchor="center", image=logotk)
 
     center(root)
 
     root.attributes('-alpha', 1.0)
 
-    root.iconbitmap('C:/Users/bmt003/Desktop/TransFile/img/TOF.ico')
+    root.iconbitmap('img/TOF.ico')
     root.config(menu=barra_menu)
     root.protocol("WM_DELETE_WINDOW", quando_fechar)
     root.mainloop()
@@ -543,7 +543,7 @@ center(telaLogin)
 telaLogin.bind('<Return>', entrar_TOF)
 
 telaLogin.attributes('-alpha', 1.0)
-telaLogin.iconbitmap('C:/Users/bmt003/Desktop/TransFile/img/TOF.ico')
+telaLogin.iconbitmap('img/TOF.ico')
 telaLogin.mainloop()
 
 
